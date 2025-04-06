@@ -18,7 +18,6 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       display: inline-block;
-      width: 60%;
     }
     button {
       background-color: #28a745;
@@ -100,7 +99,6 @@
       const minutes = Math.floor(elapsed / 60000);
       const seconds = ((elapsed % 60000) / 1000).toFixed(0);
       btn.insertAdjacentHTML('afterend', `<p>解: x = ${x}, y = ${y}</p><p>時間: ${minutes}分${seconds}秒</p>`);
-      btn.outerHTML = '<button onclick="display2Equations()">新しい問題を生成</button>';
     }
   </script>
 </head>
